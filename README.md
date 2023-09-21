@@ -11,4 +11,4 @@ yarn dev
 # or
 pnpm dev
 ```
-# Live Site [click here](www.prompting-ai.vercel.app)
+# Live Site [click here](https://prompting-ai.vercel.app/)
