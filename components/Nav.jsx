@@ -31,8 +31,11 @@ const Nav = () => {
           width={30}
           height={30}
           className="object-contain"
+          style={{
+            filter: "invert(1)",
+          }}
         />
-        <p className="logo_text">Prompting</p>
+        <p className="logo_text text-slate-500">Prompting</p>
       </Link>
 
       <div className="sm:flex hidden">
