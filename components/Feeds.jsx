@@ -5,7 +5,7 @@ import PromptCard from "./PromptCard";
 
 const PromptCardList = ({ data, handleTagClick }) => {
   return (
-    <div className="mt-16 prompt_layout">
+    <div className=" prompt_layout">
       {data.map((post) => (
         <PromptCard
           key={post._id}
@@ -77,16 +77,20 @@ const Feeds = () => {
           required
         />
       </form>
-
-      {/* All Prompts */}
-      {searchText ? (
-        <PromptCardList
-          data={searchedResults}
-          handleTagClick={handleTagClick}
-        />
-      ) : (
-        <PromptCardList data={posts} handleTagClick={handleTagClick} />
-      )}
+      <div className="mt-14">
+        <div className="w-full">
+          <h4 className="text-3xl font-bold blue_gradient"> All Prompts</h4>
+        </div>
+        {/* All Prompts */}
+        {searchText ? (
+          <PromptCardList
+            data={searchedResults}
+            handleTagClick={handleTagClick}
+          />
+        ) : (
+          <PromptCardList data={posts} handleTagClick={handleTagClick} />
+        )}
+      </div>
     </section>
   );
 };
