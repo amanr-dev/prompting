@@ -40,7 +40,7 @@ const handler = NextAuth({
 
         return true;
       } catch (error) {
-        console.log("Error user not exists: ", error.message);
+        console.log("Unable to Sign: ", error.message);
         return false;
       }
     },
