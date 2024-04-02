@@ -35,6 +35,7 @@ const Feeds = () => {
     fetchPosts();
   }, []);
 
+  // Tag click Event handler
   const handleTagClick = (tagName) => {
     setSearchText(tagName);
 
@@ -42,6 +43,7 @@ const Feeds = () => {
     setSearchedResults(searchResult);
   };
 
+  // Search function
   const filterPrompts = (searchtext) => {
     const regex = new RegExp(searchtext, "i"); // 'i' flag for case-insensitive search
     return posts.filter(
