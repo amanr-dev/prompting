@@ -4,13 +4,11 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-For running the Project
+### For running the Project
 
-```
 `npm install`
- and
+and
 `npm run dev`
-```
 
 # Live Site [click here](https://prompting-ai.vercel.app/)
 
